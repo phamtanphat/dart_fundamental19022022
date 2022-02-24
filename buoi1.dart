@@ -57,20 +57,52 @@ void main() {
 
   // 5 : Câu điều kiện
 
-  int a = 5;
-  int b = 10;
+  // int a = 5;
+  // int b = 10;
   // Điều kiện
   // a > b = "1"
   // a < b = "-1"
   // a == b = 0
 
-  if(a > b){
-    print(1);
-  }else if(a < b){
-    print(-1);
-  }else{
-    print(0);
-  }
+  // if(a > b){
+  //   print(1);
+  // }else if(a < b){
+  //   print(-1);
+  // }else{
+  //   print(0);
+  // }
 
+  // 6 : List , Set , Map
+
+  // List
+  // var arrayNames = ["Tèo","Tý","Tủn","Linh","Ngọc"];
+  //
+  // // thêm phần tử
+  // arrayNames.add("Tùng");
+  // // xóa phần tử
+  // arrayNames.removeAt(arrayNames.length - 1);
+  // // chỉnh sửa
+  // arrayNames[0] = "Hoa";
+  //
+  // print(arrayNames);
+
+  // Set
+  // Set sets = {1,2,3,3,4,4,5,6};
+  //
+  // print(sets);
+
+  //Map
+  // var object = {"name" : "Phạm Tấn Phát" , "age" : 27};
+  // print(object.runtimeType);
+
+  var a;
+
+  // if (a == null){
+  //   throw Exception("a là null");
+  // }
+  // print("Tiếp tục");
+
+  assert(a != null , "A là null");
+  print("Tiếp tục");
 }
 
