@@ -53,4 +53,24 @@ void main() {
   // print("Kết quả : $ketQua");
   // print("A : $a");
   // print("B : $b");
+
+
+  // 5 : Câu điều kiện
+
+  int a = 5;
+  int b = 10;
+  // Điều kiện
+  // a > b = "1"
+  // a < b = "-1"
+  // a == b = 0
+
+  if(a > b){
+    print(1);
+  }else if(a < b){
+    print(-1);
+  }else{
+    print(0);
+  }
+
 }
+
