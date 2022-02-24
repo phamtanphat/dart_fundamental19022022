@@ -54,7 +54,6 @@ void main() {
   // print("A : $a");
   // print("B : $b");
 
-
   // 5 : Câu điều kiện
 
   // int a = 5;
@@ -95,14 +94,30 @@ void main() {
   // var object = {"name" : "Phạm Tấn Phát" , "age" : 27};
   // print(object.runtimeType);
 
-  var a;
+  // var a;
 
   // if (a == null){
   //   throw Exception("a là null");
   // }
   // print("Tiếp tục");
 
-  assert(a != null , "A là null");
-  print("Tiếp tục");
-}
+  // assert(a != null , "A là null");
+  // print("Tiếp tục");
 
+  // int ketQua = _tinhTong(null,5);
+  // print(ketQua);
+
+  int ketQua = _tinhTong2(b: 5);
+  print(ketQua);
+}
+// positional optional parameter
+// default parameter;
+
+int _tinhTong([dynamic a , int b = 0]) {
+  a ??= 0;
+  return a + b;
+}
+// named optional parameter
+int _tinhTong2({int a = 0 , int b = 0}) {
+  return a + b;
+}
