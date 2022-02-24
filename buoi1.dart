@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main() {
   //Chú ý :
   // Comment code : ctrl + /
@@ -107,17 +109,36 @@ void main() {
   // int ketQua = _tinhTong(null,5);
   // print(ketQua);
 
-  int ketQua = _tinhTong2(b: 5);
-  print(ketQua);
+  // int ketQua = _tinhTong2(b: 5);
+  // print(ketQua);
+
+  try {
+    int code = request(500);
+    print(code);
+  } on IntegerDivisionByZeroException catch(e){
+    print("Lỗi trong intergerDivision ${e.toString()}");
+  }catch(e){
+    print("Trong catch $e");
+  }
 }
 // positional optional parameter
 // default parameter;
 
-int _tinhTong([dynamic a , int b = 0]) {
-  a ??= 0;
-  return a + b;
-}
-// named optional parameter
-int _tinhTong2({int a = 0 , int b = 0}) {
-  return a + b;
+// int _tinhTong([dynamic a , int b = 0]) {
+//   a ??= 0;
+//   return a + b;
+// }
+// // named optional parameter
+// int _tinhTong2({int a = 0 , int b = 0}) {
+//   return a + b;
+// }
+
+int request(int value) {
+  if (value == 200) {
+    return 200;
+  } else if (value == 404){
+    throw Exception("Lỗi 404");
+  }else{
+    throw IntegerDivisionByZeroException();
+  }
 }
