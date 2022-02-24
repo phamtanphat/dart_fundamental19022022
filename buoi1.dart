@@ -27,11 +27,30 @@ void main() {
   // print(b.runtimeType);
 
   // 3 : Xử lý nối chuỗi
-  var text1 = "Name : ";
-  var text2 = "Phạm Tấn Phát";
-  StringBuffer stringBuffer = StringBuffer();
-  stringBuffer.write(text1);
-  stringBuffer.write(text2);
+  // var text1 = "Name : ";
+  // var text2 = "Phạm Tấn Phát";
+  // StringBuffer stringBuffer = StringBuffer();
+  // stringBuffer.write(text1);
+  // stringBuffer.write(text2);
+  //
+  // print(stringBuffer.toString());
 
-  print(stringBuffer.toString());
+  // var name = "Phạm Tấn Phát";
+  // var age = 27;
+  // var text = "Name : ${name} , age : ${age}";
+  // print(text);
+
+  // 4: Toán tử
+  // int a = 5;
+  // int b = 5;
+  // int ketQua = a++ - --b + b-- - a++ + a--;
+  // 5 - --b + b-- - a++ + a--; a = 6 , b = 5
+  // 5 - 4 + b-- - a++ + a--; a = 6 , b = 4
+  // 5 - 4 + 4 - a++ + a--; a = 6 , b = 3
+  // 5 - 4 + 4 - 6 + a--; a = 7 , b = 3
+  // 5 - 4 + 4 - 6 + 7; a = 6 , b = 3
+  // ketqua = 6 , a = 6 , b = 3
+  // print("Kết quả : $ketQua");
+  // print("A : $a");
+  // print("B : $b");
 }
