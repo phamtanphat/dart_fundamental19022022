@@ -112,14 +112,14 @@ void main() {
   // int ketQua = _tinhTong2(b: 5);
   // print(ketQua);
 
-  try {
-    int code = request(500);
-    print(code);
-  } on IntegerDivisionByZeroException catch(e){
-    print("Lỗi trong intergerDivision ${e.toString()}");
-  }catch(e){
-    print("Trong catch $e");
-  }
+  // try {
+  //   int code = request(500);
+  //   print(code);
+  // } on IntegerDivisionByZeroException catch(e){
+  //   print("Lỗi trong intergerDivision ${e.toString()}");
+  // }catch(e){
+  //   print("Trong catch $e");
+  // }
 }
 // positional optional parameter
 // default parameter;
