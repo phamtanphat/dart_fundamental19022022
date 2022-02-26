@@ -7,5 +7,9 @@ class Dog extends Animal{
     this.color = color;
   }
 
+  @override
+  void showInfo() {
+    print("Dog {name : $name , weight : $weight , color : $color}");
+  }
 
 }

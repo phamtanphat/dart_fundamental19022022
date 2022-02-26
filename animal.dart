@@ -25,4 +25,8 @@ class Animal {
   set weight(double weight) {
     _weight = weight;
   }
+
+  void showInfo(){
+    print("Animal {name : $name , weight : $weight}");
+  }
 }
